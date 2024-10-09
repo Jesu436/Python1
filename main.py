@@ -1,10 +1,4 @@
-def sumar(a,b):
-    return a + b
-resultado = sumar(5,6)
-print('The result is: ', resultado)
+parsecs = 11
+lightyears = parsecs * 3.26
+print(f'{(parsecs)} parsecs is {(lightyears)} lightyears')
 
-def multiplicacion(x,y):
-    return x * y
-
-resultado2 = multiplicacion(85,78)
-print('El resultado es: ', resultado2)  
