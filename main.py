@@ -1,5 +1,5 @@
-import sys
-print(sys.argv)
-print(sys.argv[0])
-print(sys.argv[1])
+print("Welcome to the jungle")
+name = input('Enter your name: ')
+print(f'Greetings {name} this is where you die dude!')
+
 
