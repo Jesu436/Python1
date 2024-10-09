@@ -1,4 +1,5 @@
-parsecs = 11
-lightyears = parsecs * 3.26
-print(f'{(parsecs)} parsecs is {(lightyears)} lightyears')
+import sys
+print(sys.argv)
+print(sys.argv[0])
+print(sys.argv[1])
 
