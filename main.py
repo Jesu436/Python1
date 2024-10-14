@@ -1,8 +1,8 @@
-def genera_report(main_tank, external_tank, hidrogen_tank):
-    output = f"""Report:
-        Main tank:{main_tank}
-        External tank:{external_tank}
-        Hidrogen tank:{hidrogen_tank}
-        """
-    print(output)
+import os
+os.system("cls")
 
+def genera_reporte(**fueltank):
+    for name, value in fueltank.items():
+        print(f"{name}: {value}")
+
+genera_reporte(main=50, external=80, hidrogen=40)
