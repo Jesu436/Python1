@@ -1,20 +1,14 @@
-true_values = ['yes', 'y']
-false_values = ['no', 'n']
+class Car:
+    def __init__(self, starting_color):
+        self.make = "Mercedes"
+        self.color = starting_color
 
-def str_to_bool(value):
-    value = value.lower()
-    if value in true_values:
-        return True
-    elif value in false_values:
-        return False
-    else:
-        raise ValueError('invalid entry')
-    
-    
-try:
-    print(str_to_bool("n"))
-except Exception as ex:
-    print(ex)
+car = Car("Red")
+print(car.make)
+print(car.color)
+
+        
+
 
     
 
