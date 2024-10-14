@@ -1,5 +1,8 @@
-print("Welcome to the jungle")
-name = input('Enter your name: ')
-print(f'Greetings {name} this is where you die dude!')
-
+def genera_report(main_tank, external_tank, hidrogen_tank):
+    output = f"""Report:
+        Main tank:{main_tank}
+        External tank:{external_tank}
+        Hidrogen tank:{hidrogen_tank}
+        """
+    print(output)
 
