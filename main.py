@@ -1,7 +1,14 @@
-try:
-    open("config.txt")
-except OSError as err:
-     if err.errno == 2:
-         print("Couldn't find the config.txt file!")
-     elif err.errno == 13:
-        print("Found config.txt but couldn't read it")
+loaded_config = """# Rocket Ship Configuration File!
+fuel_tanks=4
+oxygen_tanks=3
+initial_propulsion_level=84
+$ End of file"""
+
+parsed_config = {}
+for line in loaded_config.split('\n'):
+    try:
+        key, value = line.split('=')
+        parsed_config[key] = value
+    except ValueError:
+        print(f'Unable to parse {line}')
+print(parsed_config)
